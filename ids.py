@@ -22,9 +22,7 @@ import numpy as np
 
 def random_forest():
 	"""
-	This function performs classification with random forest.
-	In order to call it please run with "$ python3 ids.py randomforest"
-
+	This function performs classification with random forest
 	"""
 	train_x,train_y,test_x,test_y ,labels= prepare_data()
 	train_y = train_y.reshape((train_y.shape[0],))
@@ -57,9 +55,6 @@ def random_forest():
 def supported_vector_machine():
 	"""
 	This function performs classification with svm.
-	In order to call it please run with "$ python3 ids.py svm"
-	So far, we have achieved a high point 73% accuracy with this method.
-
 	"""
 	train_x,train_y,test_x,test_y,labels = prepare_data()
 
